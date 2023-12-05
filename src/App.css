@@ -1,0 +1,261 @@
+/* Fondo principal */
+body {
+  background: linear-gradient(180deg, #556B2F, #4D8C37);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Encabezado */
+.header {
+  background: #354F28;
+  color: #fff;
+  padding: 1rem;
+}
+
+/* Botones de navegación */
+.nav-button {
+  background: #6B8E23;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* ... (otras reglas CSS) */
+
+/* Estilo de los botones en la parte superior derecha */
+.nav-buttons-container {
+  position: absolute;
+  top: 130px;
+  right: 10px;
+}
+
+.nav-button {
+  margin-left: 10px;
+}
+
+/* ... (otras reglas CSS) */
+
+/* Contenedor principal */
+.container {
+  padding: 2rem;
+}
+
+/* Tarjetas de plantas */
+.plant-card {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Estilo de las tarjetas de plantas */
+.plant-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  margin: 10px;
+  transition: transform 0.2s;
+  color: #333; /* Añadido para establecer el color del texto */
+}
+
+.plant-card:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo de la imagen de la tarjeta */
+.card-image img {
+  max-width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+/* Estilo del contenido de la tarjeta */
+.card-content {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.plant-name-top {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.card-content p {
+  color: #777;
+  flex: 1;
+  margin-top: 0.5rem;
+}
+
+/* Estilo del botón "Ver detalles" */
+.details-button {
+  background: #6B8E23;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+.details-button:hover {
+  background-color: #A2CD5A;
+}
+
+/* Estilo del campo de búsqueda en App.css */
+.search-input {
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 20px;
+  margin-right: 10px;
+  width: 300px;
+  background-color: #f5f5f5;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.search-input::placeholder {
+  color: #777;
+}
+
+.search-input:focus {
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo del botón de favoritos */
+.heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.heart-icon svg {
+  fill: #808080;
+  height: 24px;
+  width: 24px;
+  transition: fill 0.3s ease;
+}
+
+.heart-icon.active svg {
+  fill: #FF0000;
+}
+
+/**********************************************************************/
+/* Estilo de la notificación */
+.notification {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  transition: opacity 0.3s ease;
+}
+
+.notification:hover {
+  opacity: 0.8;
+}
+
+/**********************************************************************/
+/* Agregar estilos para la vista acerca de */
+.vista_acercade {
+  padding: 2rem;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/**************************************************************************/
+/* Estilo mejorado para la vista de contactos */
+.vista_contactos {
+  padding: 2rem;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.contact-title {
+  color: #6B8E23;
+  text-align: center;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-text {
+  margin-bottom: 20px;
+}
+
+.contact-details,
+.social-media,
+.address {
+  margin-bottom: 20px;
+}
+
+.detail {
+  margin-bottom: 10px;
+}
+
+.social-title,
+.address-title {
+  margin-bottom: 10px;
+  color: #6B8E23;
+}
+
+.social-list {
+  list-style: none;
+  padding: 0;
+}
+
+.social-link {
+  color: #6B8E23;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-link:hover {
+  text-decoration: underline;
+}
+
+.opening-hours {
+  margin-top: 20px;
+  color: #6B8E23;
+}
+/***************************************************/
+/* Estilos para el pie de página */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #354F28; /* Color de fondo del pie de página */
+  color: #fff; /* Color del texto en el pie de página */
+}
+
+
